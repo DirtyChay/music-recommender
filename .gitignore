@@ -3,3 +3,4 @@
 .idea/modules.xml
 .idea/music-recommender.iml
 .idea/vcs.xml
+data/train_triplets.txt
