@@ -1,28 +1,14 @@
 # music-recommender
 This project aims to create song recommendations as a personalized playlist using the Million Song Dataset combined with Nest User data.
 
-Accessing Data:
-
-> Full data: 
-
-Go to AWS
-
-Set your region to US-east 1
-
-Open EC2
-
-Scroll down to snapshots in "Elastic Block Store" section
-
-Select public snapshots
-
-Look up: snap-5178cf30
-
-THIS WILL COST MONEY BE CAREFUL. TALK IT OUT FIRST
-
-
-
-
-> Subset:
+Link to dataset:
 
 http://millionsongdataset.com/pages/getting-dataset/#subset
 
+Environment set up:
+- The environment for this project is google colab + google drive
+- The data was uploaded onto google drive
+- In google drive create drive a folder called 'DSE' 
+- Then create a shortcut to the drive folder: https://drive.google.com/drive/folders/1t-1ueI5ETe1Io3TsyBkqkf3gaaftR9Al
+- run mount code in google collab
+- read csvs
