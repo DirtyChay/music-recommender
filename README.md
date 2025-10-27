@@ -20,5 +20,6 @@ Link to data plots noteboook(question 5):
 https://colab.research.google.com/drive/1EWx3bRGiWkc8kpmrDeuQ_j1jzZ2e1f5w#scrollTo=_Ty_supesYTh
 
 Explanation to question 6:
+
 In order to create some of the visuals we wanted to, we had to preprocess the data. We merged tables to bring in genre info, user and song info. After looking more at the data we realize we need to bring in genre information some other way since right now 70% of songs do not have a genre associated with them. We also aim to bring in lyric and audio features from another file to further enrich our data. We could potentially extract meaning from lyrics to add a sentiment score to songs and see how that affects popularity. Incorporating audio features will help us group songs better. Our year column also has a lot of missing values, about half of the songs do not have a release year, so we may need to work on a subset. Additionally we have missing values for artist hotness and artist familiarity so conducting imputation for the missing data might be necessary. For the clustering part, we started some of the preprocessing since we wanted to visualize our user data better, we want to cluster users together by the songs they listen to to create consumer profiles so from the data we derived our users' favorite songs, genres, artist, and song year. 
 
