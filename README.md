@@ -5,7 +5,15 @@ Link to dataset:
 
 http://millionsongdataset.com/pages/getting-dataset/#subset
 
-Environment set up:
+## Environment Setup (Local)
+Downloading the subset from the official site is complicated, so please download the zip from Google Drive folder, extract, and place all files in the main project directory before running the code.
+https://drive.google.com/file/d/17D10G3VMh-OI0ot9JcspHr7Sb8lis1jm/view?usp=sharing
+**Required libraries:**
+- Python ≥ 3.13  
+- pandas
+
+
+## Environment Setup (Google Collab):
 - The environment for this project is google colab + google drive
 - The data was uploaded onto google drive
 - In google drive create drive a folder called 'DSE' 
