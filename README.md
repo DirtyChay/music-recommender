@@ -23,12 +23,12 @@ https://drive.google.com/drive/folders/1hGWJrezEpd7SMbizWebN_Ku5nl1LAUAh
 
 ## Environment Setup (Google Collab):
 
-- The environment for this project is google colab + google drive
-- The data was uploaded onto google drive
-- In google drive create drive a folder called 'DSE'
+- The environment for this project is google colab + Google Drive
+- The data was uploaded onto Google Drive
+- In Google Drive create drive a folder called 'DSE'
 - Then create a shortcut to the drive folder: https://drive.google.com/drive/folders/1t-1ueI5ETe1Io3TsyBkqkf3gaaftR9Al
-- run mount code in google collab
-- read csvs
+- Run mount code in Google Collab
+- Read csvs
 
 Link to data exploration notebook (question 4):
 https://colab.research.google.com/drive/1R78wYIx8ubgndlbqqMjH89J9ISlaoF28#scrollTo=LhDklquNoH-B
