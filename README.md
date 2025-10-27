@@ -12,7 +12,9 @@ https://drive.google.com/file/d/17D10G3VMh-OI0ot9JcspHr7Sb8lis1jm/view?usp=shari
 **Required libraries:**
 - Python ≥ 3.13  
 - pandas
-
+- matplotlib
+- seaborn
+- networkx
 
 ## Environment Setup (Google Collab):
 - The environment for this project is google colab + google drive
