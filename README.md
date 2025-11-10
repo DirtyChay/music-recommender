@@ -88,7 +88,7 @@ We visualized the number of points in each cluster for different k values and th
 We are thinking of building a density based clustering model for our next model because our data is dense in some regions and sparse in others. We want to be able to capture the variance in the density. This may also make the clusters more representative of user behavior as that presents itself in regular shaped/spherical clusters (as in K Means) but rather presents in irregular shapes with varying densities. 
 
 
-## 4. Conclusion section:
+## 4. Conclusion Section:
 
 Our model clusters similar users together, because we want to map a user to a cluster, then pull the top songs in that cluster and recommend them to the user as a playlist. However, as we do not have users to test on, we will not know if we actually succeeded in creating a robust recommendation model.
 
