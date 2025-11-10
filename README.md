@@ -55,14 +55,17 @@ We one hot encode our categorical features (genre and artist) using pd.getdummie
 **Feature expansion:**
 We apply PCA to the user data, which transforms the original features into a new set of orthogonal components that capture the most important patterns in the data. We set n_components to 0.9 which automatically selects the number of components that explain 90% of the variance in the data. We reduce dimensionality and keep important feature information thus facilitating the clustering process. (File 3)
 
-## 2. Model Evaluation:
+## 2. Model & Evaluation:
 
 As we are using clustering, we cannot check for accuracy. However, we were able to capture 92.2% of the total variance for our model using PCA. Then, we use the elbow method to find a suitable k for our k means model. To evaluate the clusters, we produce a pairplot of the model using a random sample and observe how the clusters look across the principal components. 
 
-**Model Steps**
-1.Run PCA on the preprocessed data
-2.Use the elbow method to find a k value
-3.Run kmeans with the dataframe created in the PCA step
+**Model Steps:**
+
+1. Run PCA on the preprocessed data
+
+2. Use the elbow method to find a k value
+
+3. Run kmeans with the dataframe created in the PCA step
 
 **Evaluation:**
 
