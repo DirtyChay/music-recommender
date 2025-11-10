@@ -40,6 +40,7 @@ https://drive.google.com/drive/folders/1hGWJrezEpd7SMbizWebN_Ku5nl1LAUAh
 - File 3: PCA, Clusterng and Model Evaluation
   https://colab.research.google.com/drive/1t6gh9YIIY5zEJQHlJ6jL0e3jdtfI5q70#scrollTo=9096ff6b
 
+- Data: https://drive.google.com/drive/folders/1hGWJrezEpd7SMbizWebN_Ku5nl1LAUAh?usp=drive_link
 
 ## 1. Preprocesssing:
 
@@ -72,8 +73,19 @@ As we are using clustering, we cannot check for accuracy. However, we were able 
 **The Elbow Method:**
 This is an indirect method of evaluating the model. Since this step calculates inertia, it helps us visualize how the model is reacting to different cluster numbers. Before running this and finding out the best k, we set the number of clusters to 30. After running the elbow method, we were able to find the right balance for our model, since too few clusters causes high inertia and too many clusters can cause overfitting and add unnecessary complexity. We found that the optimal number of clusters for our model was 9. 
 
+<img src="elbow.png" alt="elbow" width="500"/>
+
 **Visual Inspection:**
 Once we conducted PCA and compared scatter plots before and after. Before PCA, we saw that the model clustered groups mainly by total_plays and total_track_time. Although they are important features, we did not want the model to simply group by these, since someone who has a 1000 minutes of Taylor Swift theoretically should not be grouped with someone with 1000 minutes of Metallica. PCA in fact did improve clustering.
+
+Scatterplot before one-hot encoding:
+
+<img src="scatterplot_before_pca.png" alt="elbow" width="500"/>
+
+Scatterplot after one-hot encoding and PCA
+
+<img src="scatterplot_after_onehot_pca.png" alt="elbow" width="500"/>
+
 
 **Sample Silhouette Score:**
 This score helps us understand how similar each point is to its own cluster versus other clusters. If the score is close to 1, it indicates that our points are well clustered, if it's around 0 the points may be on the boundary between clusters, and if it's negative then the point may be in the wrong cluster. Running this is very expensive, so we selected a random sample of 50k points. The sample silhouette score was approx 0.34. This indicates that the clusters capture some structure in the user data but there is overlap between clusters. The clusters are still useful in helping us identify groups by listening patterns and genre. With just genre, artist, and listening metrics, the feature space is pretty limited, so clusters will naturally not be very great.
@@ -85,6 +97,9 @@ This score helps us understand how similar each point is to its own cluster vers
 Since we conducted unsupervised machine learning we do not plot a learning curve. We did however, use the elbow method to find the best number of clusters for our model. We noticed two elbows, a clear elbow at 9 and a potential elbow at 15.
 We visualized the number of points in each cluster for different k values and that validated our choice of k=9 as higher numbers of clusters resulted in several tiny clusters which we could not justify given our general intuition for how people tend to listen to music.
 
+Cluster sizes for each k:
+
+<img src="stacked_bar_plot_cluster_sizes_k.png" alt="elbow" width="500"/>
 
 **What are the next models you are thinking of and why?**
 
@@ -96,6 +111,11 @@ We are thinking of building a density based clustering model for our next model 
 Our model clusters similar users together, because we want to map a user to a cluster, then pull the top songs in that cluster and recommend them to the user as a playlist. However, as we do not have users to test on, we will not know if we actually succeeded in creating a robust recommendation model.
 
 What we can speak to is that we are somewhat happy with how the clusters look in general, but notice some strangeness: our largest cluster has 531,864 datapoints, and our smallest cluster only has 62 datapoints. We looked into the statistics for the clusters, and found our outlier cluster #6 (with 62 users) listens to songs at a much higher rate than people in other clusters (perhaps they are bots) and on average have played 614 songs each. The big cluster #0, which contains half the users at ~500,000, has a significantly lower number, 22 songs on average played per user. It's possible that this cluster comprises primarily people trying out the music platform and listening to songs for an hour or two and then leaving. 
+
+Pairplot of Cluster Summary Metrics
+
+<img src="pairplot_cluster_summary_metrics.png" alt="elbow" width="1000"/>
+
 
 **Some more detailed findings:**
 
