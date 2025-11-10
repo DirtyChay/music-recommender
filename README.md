@@ -45,10 +45,13 @@ https://drive.google.com/drive/folders/1hGWJrezEpd7SMbizWebN_Ku5nl1LAUAh
 
 **Transformation:**
 We transformed the raw user-song interaction data into meaningful user-level features to prepare for clustering and recommendation tasks.  This involved aggregating each user’s activity to compute statistics such as total play count, total listening time, and the number of unique songs and artists. We also identified each user’s favorite attributes, including their most-played song, favorite artist, preferred genres, and most-listened-to release year. We calculated the total listening time as total plays (per song) x track duration. (File 1)
+
 **Scaling:**
 To scale our numerical features we tested MinMaxScaler and RobustScaler, we proceeded with using RobustScaler since it is not as highly sensitive to outliers like MinMax. (File 2)
+
 **Encoding:**
 We one hot encode our categorical features (genre and artist) using pd.getdummies. Due to lack of computing power, we only keep the one hot encoded columns representing the genre. This is because for our artist category, we have 14975 unique artists and including these all as features was very costly. (File 2)
+
 **Feature expansion:**
 We apply PCA to the user data, which transforms the original features into a new set of orthogonal components that capture the most important patterns in the data. We set n_components to 0.9 which automatically selects the number of components that explain 90% of the variance in the data. We reduce dimensionality and keep important feature information thus facilitating the clustering process. (File 3)
 
@@ -65,8 +68,10 @@ As we are using clustering, we cannot check for accuracy. However, we were able 
 
 **The Elbow Method:**
 This is an indirect method of evaluating the model. Since this step calculates inertia, it helps us visualize how the model is reacting to different cluster numbers. Before running this and finding out the best k, we set the number of clusters to 30. After running the elbow method, we were able to find the right balance for our model, since too few clusters causes high inertia and too many clusters can cause overfitting and add unnecessary complexity. We found that the optimal number of clusters for our model was 9. 
+
 **Visual Inspection:**
 Once we conducted PCA and compared scatter plots before and after. Before PCA, we saw that the model clustered groups mainly by total_plays and total_track_time. Although they are important features, we did not want the model to simply group by these, since someone who has a 1000 minutes of Taylor Swift theoretically should not be grouped with someone with 1000 minutes of Metallica. PCA in fact did improve clustering.
+
 **Sample Silhouette Score:**
 This score helps us understand how similar each point is to its own cluster versus other clusters. If the score is close to 1, it indicates that our points are well clustered, if it's around 0 the points may be on the boundary between clusters, and if it's negative then the point may be in the wrong cluster. Running this is very expensive, so we selected a random sample of 50k points. The sample silhouette score was approx 0.34. This indicates that the clusters capture some structure in the user data but there is overlap between clusters. The clusters are still useful in helping us identify groups by listening patterns and genre. With just genre, artist, and listening metrics, the feature space is pretty limited, so clusters will naturally not be very great.
 
