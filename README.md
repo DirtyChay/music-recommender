@@ -73,18 +73,18 @@ As we are using clustering, we cannot check for accuracy. However, we were able 
 **The Elbow Method:**
 This is an indirect method of evaluating the model. Since this step calculates inertia, it helps us visualize how the model is reacting to different cluster numbers. Before running this and finding out the best k, we set the number of clusters to 30. After running the elbow method, we were able to find the right balance for our model, since too few clusters causes high inertia and too many clusters can cause overfitting and add unnecessary complexity. We found that the optimal number of clusters for our model was 9. 
 
-<img src="elbow.png" alt="elbow" width="500"/>
+<img src="img/elbow.png" alt="elbow" width="500"/>
 
 **Visual Inspection:**
 Once we conducted PCA and compared scatter plots before and after. Before PCA, we saw that the model clustered groups mainly by total_plays and total_track_time. Although they are important features, we did not want the model to simply group by these, since someone who has a 1000 minutes of Taylor Swift theoretically should not be grouped with someone with 1000 minutes of Metallica. PCA in fact did improve clustering.
 
 Scatterplot before one-hot encoding:
 
-<img src="scatterplot_before_pca.png" alt="elbow" width="500"/>
+<img src="img/scatterplot_before_pca.png" alt="elbow" width="500"/>
 
 Scatterplot after one-hot encoding and PCA
 
-<img src="scatterplot_after_onehot_pca.png" alt="elbow" width="500"/>
+<img src="img/scatterplot_after_onehot_pca.png" alt="elbow" width="500"/>
 
 
 **Sample Silhouette Score:**
@@ -99,7 +99,7 @@ We visualized the number of points in each cluster for different k values and th
 
 Cluster sizes for each k:
 
-<img src="stacked_bar_plot_cluster_sizes_k.png" alt="elbow" width="500"/>
+<img src="img/stacked_bar_plot_cluster_sizes_k.png" alt="elbow" width="500"/>
 
 **What are the next models you are thinking of and why?**
 
@@ -114,7 +114,7 @@ What we can speak to is that we are somewhat happy with how the clusters look in
 
 Pairplot of Cluster Summary Metrics
 
-<img src="pairplot_cluster_summary_metrics.png" alt="elbow" width="1000"/>
+<img src="img/pairplot_cluster_summary_metrics.png" alt="elbow" width="1000"/>
 
 
 **Some more detailed findings:**
