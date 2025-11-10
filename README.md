@@ -78,13 +78,17 @@ This is an indirect method of evaluating the model. Since this step calculates i
 **Visual Inspection:**
 Once we conducted PCA and compared scatter plots before and after. Before PCA, we saw that the model clustered groups mainly by total_plays and total_track_time. Although they are important features, we did not want the model to simply group by these, since someone who has a 1000 minutes of Taylor Swift theoretically should not be grouped with someone with 1000 minutes of Metallica. PCA in fact did improve clustering.
 
-Scatterplot before one-hot encoding:
+Scatterplot of original feature space before one-hot encoding:
 
 <img src="img/scatterplot_before_pca.png" alt="elbow" width="500"/>
 
-Scatterplot after one-hot encoding and PCA
+Scatterplot of original feature space after one-hot encoding and PCA:
 
 <img src="img/scatterplot_after_onehot_pca.png" alt="elbow" width="500"/>
+
+A closer look at PCA space:
+
+<img src="img/pc_space_zoom_in.png" alt="elbow" width="500"/>
 
 
 **Sample Silhouette Score:**
