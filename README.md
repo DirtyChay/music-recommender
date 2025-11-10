@@ -15,11 +15,14 @@ https://drive.google.com/drive/folders/1hGWJrezEpd7SMbizWebN_Ku5nl1LAUAh
 
 **Required libraries:**
 
-- Python ≥ 3.13
-- pandas
-- matplotlib
-- seaborn
-- networkx
+- **Python ≥ 3.13**
+- **pandas**
+- **polars**
+- **pyarrow**
+- **numpy**
+- **matplotlib**
+- **seaborn**
+- **scikit-learn**
 
 ## Environment Setup (Google Collab):
 
