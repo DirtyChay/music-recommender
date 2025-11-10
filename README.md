@@ -78,11 +78,13 @@ This score helps us understand how similar each point is to its own cluster vers
 ## 3: Questions:
 
 **Where does your model fit in the fitting graph?**
+
 Since we conducted unsupervised machine learning we do not plot a learning curve. We did however, use the elbow method to find the best number of clusters for our model. We noticed two elbows, a clear elbow at 9 and a potential elbow at 15.
 We visualized the number of points in each cluster for different k values and that validated our choice of k=9 as higher numbers of clusters resulted in several tiny clusters which we could not justify given our general intuition for how people tend to listen to music.
 
 
 **What are the next models you are thinking of and why?**
+
 We are thinking of building a density based clustering model for our next model because our data is dense in some regions and sparse in others. We want to be able to capture the variance in the density. This may also make the clusters more representative of user behavior as that presents itself in regular shaped/spherical clusters (as in K Means) but rather presents in irregular shapes with varying densities. 
 
 
