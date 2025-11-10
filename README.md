@@ -30,22 +30,13 @@ https://drive.google.com/drive/folders/1hGWJrezEpd7SMbizWebN_Ku5nl1LAUAh
 - Run mount code in Google Collab
 - Read csvs
 
-Link to data exploration notebook (question 4):
-https://colab.research.google.com/drive/1R78wYIx8ubgndlbqqMjH89J9ISlaoF28#scrollTo=LhDklquNoH-B
+## Google Collab Files:
+**- File 1: Data Retrieval and Aggregation**
+  https://colab.research.google.com/drive/1-q-dqyzmLsRcgv1YBy9cNQehbUDZ_7W9#scrollTo=pFw4IqMhIPGU 
+**- File 2: Scaling and One Hot Encoding**
+  https://colab.research.google.com/drive/1im-2VShAmXn2CdvcDh29SkmVWCuXrMyw#scrollTo=kSa132xItemW
+**- File 3: PCA, Clusterng and Model Evaluation**
+- https://colab.research.google.com/drive/1t6gh9YIIY5zEJQHlJ6jL0e3jdtfI5q70#scrollTo=9096ff6b
 
-Link to data plots noteboook(question 5):
-https://colab.research.google.com/drive/1EWx3bRGiWkc8kpmrDeuQ_j1jzZ2e1f5w#scrollTo=_Ty_supesYTh
 
-Explanation to question 6:
-
-In order to create some of the visuals we wanted to, we had to preprocess the data. We merged tables to bring in genre
-info, user and song info. After looking more at the data we realize we need to bring in genre information some other way
-since right now 70% of songs do not have a genre associated with them. We also aim to bring in lyric and audio features
-from another file to further enrich our data. We could potentially extract meaning from lyrics to add a sentiment score
-to songs and see how that affects popularity. Incorporating audio features will help us group songs better. Our year
-column also has a lot of missing values, about half of the songs do not have a release year, so we may need to work on a
-subset. Additionally we have missing values for artist hotness and artist familiarity so conducting imputation for the
-missing data might be necessary. For the clustering part, we started some of the preprocessing since we wanted to
-visualize our user data better, we want to cluster users together by the songs they listen to to create consumer
-profiles so from the data we derived our users' favorite songs, genres, artist, and song year. 
 
