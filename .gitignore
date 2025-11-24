@@ -7,3 +7,4 @@ data/train_triplets.txt
 msd_tagtraum_cd2.cls
 track_metadata.db
 train_triplets.txt
+data
