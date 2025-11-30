@@ -50,7 +50,7 @@ https://drive.google.com/drive/folders/1hGWJrezEpd7SMbizWebN_Ku5nl1LAUAh
 
 my current work starts here:
 
-## Project Steps
+## Methods:
 
 For a complete walkthrough of the project, including detailed explanations, figures, and code, refer to the [full project report](INSERT_REPORT_LINK_HERE).
 
@@ -109,7 +109,19 @@ For a complete walkthrough of the project, including detailed explanations, figu
 - User Top 20: Output User's top 20 songs
 - Compare cluster playlists to user top songs
 
+---
 
+## Results
+*Content to be added from the results section of the full report.*
+
+## Discussion
+*Content to be added from the discussion section of the full report.*
+
+## Conclusion
+*Content to be added from the conclusion section of the full report.*
+
+## Statement of Collaboration
+*add* 
 
 
 
