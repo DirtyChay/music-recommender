@@ -41,8 +41,8 @@ https://drive.google.com/drive/folders/1HDbRnlnZX_9-2XqVEZwiZabEKfR88BKA
 
 The Milesstones can be run independently. However each milestone builds off the last.
 
-- Milestone 2 - EDA:
-- Milestone 3:
+- Milestone 2 - EDA: https://github.com/DirtyChay/music-recommender/tree/Milestone2 
+- Milestone 3: https://github.com/DirtyChay/music-recommender/tree/Milestone3
 - Milestone 4:
     - File 1: Data Retrieval and Aggregation
       https://colab.research.google.com/drive/1-q-dqyzmLsRcgv1YBy9cNQehbUDZ_7W9#scrollTo=pFw4IqMhIPGU
