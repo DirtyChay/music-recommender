@@ -25,35 +25,44 @@ This dataframe was extracted by connecting to the SQLite track metadata database
 <img src="images/1.png" alt="elbow" width="500" height="800"/>
 
 Immediately we noticed that features like artist familiarity, artist hotness and the shs performance score have minimum values of -1 or how year has a minimum value of 0 which could indicate missing values. So the distributions were plotted for further inspection.
+
 <img src="images/2.png" alt="elbow" width="500" height="800"/>
 <img src="images/3.png" alt="elbow" width="500" height="800"/>
 <img src="images/4.png" alt="elbow" width="500" height="800"/>
 
 It turns out that -1 is the missingness indicator for artist hotness and artist familiarity, there are only 12 unknown values for artist hotness and 180 unknown values for artist familiarity, this is good since the more known data we have the better the insights. For the year variable, there is a large amount of unknowns since a song cannot have a year of 0. We uncovered that 484,284 songs have a year of 0. If we remove 0s then the distribution is much clearer, showing songs ranging from the 1950s up until the early 2000s.
+
 <img src="images/5.png" alt="elbow" width="500" height="800"/>
 
 To explore the categorical labels, we looked at the genre labels via seaborn bar plots, which have majority and minority genres. The top majority and minority genre is rock, and the other most popular among both are electronic, pop. Metal is a more prevalent minority genre.
+
 <img src="images/6.png" alt="elbow" width="500" height="800"/>
 
 We also explored genre missingness using seaborn pie plots and noticed a large portion of missing data
+
 <img src="images/7.png" alt="elbow" width="500" height="800"/>
 
 ### The User-Song Dataframe
 
 Using the describe function we saw the original dataframe has 48,373,586 rows and 3 columns, the columns are user_id, song_id and number of plays. We merge this dataframe with the track metadata dataframe from above to be able to gain more data on the songs users are playing. The dataframe has 384,546 unique songs and 1,019,318 unique users.
+
 <img src="images/8.png" alt="elbow" width="500" height="800"/>
 
 We plotted the distribution of song plays, which showed a right skewed distribution, so the majority of the plays are smaller than larger. Additionally, we used a stripplot as well in order to capture the outliers that weren’t being captured in the histogram and we can see some very large play counts, the largest visible play count nearing 700,000.
+
 <img src="images/9.png" alt="elbow" width="500" height="800"/>
 <img src="images/10.png" alt="elbow" width="500" height="800"/>
 
 We looked at the genre distributions of the songs within the user-song dataframe with rock still heavily in the lead.
+
 <img src="images/11.png" alt="elbow" width="500" height="800"/>
 
 For the user–song interaction dataframe, via a seaborn pie plot, it was observed that 61.7% of the songs had identifiable genre labels, which is higher than the proportion observed in the full track-metadata dataframe. This is attributed to the lower number of unique songs included in the interaction dataframe.
+
 <img src="images/12.png" alt="elbow" width="500" height="800"/>
 
 In order to find out more about the artists that were being listened to in the dataset, we visualized the top 15 most listened to artists using a barplot. Noticing once again the popularity of rock.
+
 <img src="images/13.png" alt="elbow" width="500" height="800"/>
 
 Other visualizations that were created were correlation heatmaps to see the correlation between numerical variables, if any. But we noticed very low correlations between most variables except artist hotness and artists similarity and shs perf and shs work which was expected. These visualizations and their code can be found in the milestone 2 plots notebook.
