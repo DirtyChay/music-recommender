@@ -142,7 +142,21 @@ the [full project report](INSERT_REPORT_LINK_HERE).
 
 ## Conclusion
 
-*Content to be added from the conclusion section of the full report.*
+- Users dilteration was done post initial model runs.
+- Rerunning models after advanced feature engineering (augmenting data with genres, removing extreme outliers, removing non repeat customers) significantly improved results 
+- We created our own cluster evaluation metrics by aggregating features for each clusters and averaging them. 
+- We inspected the top songs of an arbitrary user and generaeted playlists based on the clusters it fit.
+- We compared the songs, artists, genres and years to qualify the suggested playlists and check for overfitting and underfitting
+- We would need actual user feedback to evaluate the playlists.
+- Augmenting the data with actual song information would help improve the model to make more accurate clusters. 
+- Adding the one hot encoded data for artist_id and song_id would help add nuance to the models.
+- The user-user interactions that could be derived via shared songs or shared genre would also be helpful for measuring similarity between two users. 
+- The users, songs and plays data forms a bipartite graph where plays are the links between user and song nodes and the play counts is the weight
+- Graph based machine learning methods utilize the interrelated nature of the data 
+- We tried a simple Louvain algoritm based clustering on the graph to explore possible future directions
+
+
+
 
 ## Statement of Collaboration
 
