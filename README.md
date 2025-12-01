@@ -69,7 +69,7 @@ my current work starts here:
 ## Methods:
 
 For a complete walkthrough of the project, including detailed explanations, figures, and code, refer to
-the [full project report](INSERT_REPORT_LINK_HERE).
+the [[full project report](https://github.com/DirtyChay/music-recommender/blob/Milestone4/REPORT.md).
 
 ### 1. Exploratory Data Analysis (EDA)
 
