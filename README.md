@@ -9,9 +9,10 @@ http://millionsongdataset.com/pages/getting-dataset/#subset
 
 ## Environment Setup (Local)
 
-Downloading the subset from the official site is complicated, so please download the 3 files from the Google Drive
-folder and place all files in the main project directory before running the code.
-https://drive.google.com/drive/folders/1hGWJrezEpd7SMbizWebN_Ku5nl1LAUAh
+Downloading the subset from the official site is complicated, so please download the 3 initial files ("
+train_triplets.txt", "track_metadata.db", "msd_tagtraum_cd2.cls") from the Google Drive folder and place all files in
+the main project directory before running the code.
+https://drive.google.com/drive/folders/1HDbRnlnZX_9-2XqVEZwiZabEKfR88BKA
 
 **Required libraries:**
 
