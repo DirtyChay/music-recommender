@@ -134,11 +134,33 @@ the [full project report](INSERT_REPORT_LINK_HERE).
 
 ## Results
 
-*Content to be added from the results section of the full report.*
+- **Preprocessing Results:**
+    - After removing null genres and year = 0, the mean year for songs is 1998.
+    - Pairplots showed that main numerical attributes (duration, artist familiarity, artist hotness, year) do not form distinct clusters by genre.
+    - Duration is highly skewed; year shows spikes in 2000; artist familiarity and hotness are mid-range with weak correlation.
+- **User-level Data:**
+    - Correlation matrix showed strong correlations among activity features (total plays, total play time, unique songs/artists) but weak correlations for preference-based attributes.
+- **Dimensionality Reduction:**
+    - PCA retained 8 components explaining 91.19% of variance.
+    - Elbow method suggested 9 clusters, but higher numbers produced more even cluster distributions.
+- **KMeans:**
+    - Silhouette score = 0.133, indicating weak separation.
+    - Cluster sizes ranged from 1,432 to 55,442 users.
+    - Visualization shows dense central region with substantial overlap.
+- **HDBSCAN:**
+    - Automatically selected 151 clusters, many small dense clusters and noise points.
+    - Visualizations show overlapping clusters with meaningful local structure.
+- **Playlist Results:**
+    - User top 20 songs compared with cluster playlists.
+    - Strong overlap for genres, moderate overlap for songs, artists, and years.
+    - 50% overlap between KMeans and HDBSCAN clusters across all metrics.
 
 ## Discussion
 
-*Content to be added from the discussion section of the full report.*
+- **EDA:** Crucial for understanding data structure, missing values, outliers, and feature distributions. Histograms, bar charts, and stripplots revealed skewness and extreme values.
+- **Preprocessing:** Ensured clean input for clustering. Dropped rows with missing genres/year, scaled numerical variables, one-hot encoded categorical features. PCA reduced dimensionality while retaining 90% variance. Heatmaps showed higher cluster numbers gave more even distributions, guiding KMeans choices.
+- **KMeans:** Chosen for simplicity and scalability. Captures linear patterns in user behavior.
+- **HDBSCAN:** Complementary approach capturing non-linear patterns. Identifies dense local clusters and noise.
 
 ## Conclusion
 
@@ -154,8 +176,6 @@ the [full project report](INSERT_REPORT_LINK_HERE).
 - The users, songs and plays data forms a bipartite graph where plays are the links between user and song nodes and the play counts is the weight
 - Graph based machine learning methods utilize the interrelated nature of the data 
 - We tried a simple Louvain algoritm based clustering on the graph to explore possible future directions
-
-
 
 
 ## Statement of Collaboration
