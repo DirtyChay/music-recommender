@@ -64,7 +64,6 @@ The Milesstones can be run independently. However each milestone builds off the 
       
     - Data: https://drive.google.com/drive/folders/1hGWJrezEpd7SMbizWebN_Ku5nl1LAUAh?usp=drive_link
 
-my current work starts here:
 
 ## Methods:
 
