@@ -34,16 +34,20 @@ https://drive.google.com/drive/folders/1hGWJrezEpd7SMbizWebN_Ku5nl1LAUAh
 - Read csvs
 
 ## Google Collab Files:
-- File 1: Data Retrieval and Aggregation
+The Milesstones can be run independently. However each milestone builds off the last. 
+- Milestone 2 - EDA:
+- Milestone 3: 
+- Milestone 4:
+  - File 1: Data Retrieval and Aggregation
   https://colab.research.google.com/drive/1-q-dqyzmLsRcgv1YBy9cNQehbUDZ_7W9#scrollTo=pFw4IqMhIPGU 
 
-- File 2: Scaling and One Hot Encoding**
+  - File 2: Scaling and One Hot Encoding**
   https://colab.research.google.com/drive/1im-2VShAmXn2CdvcDh29SkmVWCuXrMyw#scrollTo=kSa132xItemW
   
-- File 3: PCA, Clusterng and Model Evaluation
+  - File 3: PCA, Clusterng and Model Evaluation
   https://colab.research.google.com/drive/1t6gh9YIIY5zEJQHlJ6jL0e3jdtfI5q70#scrollTo=9096ff6b
 
-- Data: https://drive.google.com/drive/folders/1hGWJrezEpd7SMbizWebN_Ku5nl1LAUAh?usp=drive_link
+  - Data: https://drive.google.com/drive/folders/1hGWJrezEpd7SMbizWebN_Ku5nl1LAUAh?usp=drive_link
 
 
 
