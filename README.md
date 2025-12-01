@@ -3,6 +3,8 @@
 This project aims to create song recommendations as a personalized playlist using the Million Song Dataset combined with
 Nest User data.
 
+<img src="images/user_cluster_image.png" alt="elbow" width="500" height="800"/>
+
 Link to dataset:
 
 http://millionsongdataset.com/pages/getting-dataset/#subset
@@ -135,10 +137,4 @@ the [full project report](INSERT_REPORT_LINK_HERE).
 
 ## Statement of Collaboration
 
-*add* 
-
-
-
-
-
-
+*add*
