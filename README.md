@@ -45,14 +45,17 @@ The Milesstones can be run independently. However each milestone builds off the 
 - Milestone 3: https://github.com/DirtyChay/music-recommender/tree/Milestone3
 - Milestone 4:
     - File 1: Data Retrieval and Aggregation
-      https://colab.research.google.com/drive/1-q-dqyzmLsRcgv1YBy9cNQehbUDZ_7W9#scrollTo=pFw4IqMhIPGU
+      https://colab.research.google.com/drive/1h_kU4OeoJo2ckthB4Nb0gZ5gtmtxEwX3
 
-    - File 2: Scaling and One Hot Encoding**
-      https://colab.research.google.com/drive/1im-2VShAmXn2CdvcDh29SkmVWCuXrMyw#scrollTo=kSa132xItemW
+    - File 2: Data Preprocessing
+      https://colab.research.google.com/drive/1WeXOa1ElvLiCviyM6z9mqvctxymc1OIk
 
-    - File 3: PCA, Clusterng and Model Evaluation
-      https://colab.research.google.com/drive/1t6gh9YIIY5zEJQHlJ6jL0e3jdtfI5q70#scrollTo=9096ff6b
+    - File 3: Dimensionality Reduction, Clusterng and Model Evaluation
+      https://colab.research.google.com/drive/1M1M9YJdQ6Trbz9RW_sMKrIaZAGUFY6RC
 
+    - File 4: Song Recommendation and Further Cluster Evaluation
+      https://colab.research.google.com/drive/1tefikJ3rhLLgSbNbZ2LNBseMEHwgnHMW
+      
     - Data: https://drive.google.com/drive/folders/1hGWJrezEpd7SMbizWebN_Ku5nl1LAUAh?usp=drive_link
 
 my current work starts here:
