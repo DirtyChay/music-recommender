@@ -146,4 +146,9 @@ the [full project report](INSERT_REPORT_LINK_HERE).
 
 ## Statement of Collaboration
 
-*add*
+
+**Faizan Haque:** Project Leader, Developer, Visionary: Organized meetings, wrote code, generate plots, initial exploration of dataset, designed the metrics for model evaluation, came up with vision and mindmap for the project
+
+**Chayan Tronson:** Lead Developer: Wrote code, ran models, managed notebooks and data files, setup git repository, worked on report and documentation.
+
+**Isabella Gonzalez:** Lead Artist, Documentation, and Design: Wrote core of report and README, located dataset, added testing metrics, beautified EDA. 
