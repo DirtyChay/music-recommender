@@ -68,7 +68,7 @@ The Milesstones can be run independently. However each milestone builds off the 
 ## Methods:
 
 For a complete walkthrough of the project, including detailed explanations, figures, and code, refer to
-the [[full project report](https://github.com/DirtyChay/music-recommender/blob/Milestone4/REPORT.md).
+the [[full project report](https://github.com/DirtyChay/music-recommender/blob/Milestone4/REPORT.md].
 
 ### 1. Exploratory Data Analysis (EDA)
 
