@@ -185,11 +185,12 @@ While using traditional machine learning methods are able to create a recommenda
 Just as an exploration for future directions for the project, we also converted the user-songs-plays data into a neo4j graph (a snippet shown below) and used the louvain algorithm to generate communities
 Genre nodes are in black, artist nodes are in gray, song nodes are in green and the users are colored based on the cluster determined using the Louvain algorithm. Now we can use these communities to recommend songs and as we get feedback from the user, we can update the weights for the edges over time and generate updated clusters.
 
-<img src="images/24.png" alt="elbow" width="500" height="800"/>
+<img src="images/24.PNG" alt="elbow" width="500" height="800"/>
+<img src="images/26.PNG" alt="elbow" width="500" height="800"/>
 
 Just as an exploration for future directions for the project, we also converted the user-songs-plays data into a neo4j graph (a snippet shown below) and used the louvain algorithm to generate communities
 
-<img src="images/25.png" alt="elbow" width="500" height="800"/>
+<img src="images/25.PNG" alt="elbow" width="500" height="800"/>
 
 Genre nodes are in black, artist nodes are in gray, song nodes are in green and the users are colored based on the cluster determined using the Louvain algorithm. Now we can use these communities to recommend songs and as we get feedback from the user, we can update the weights for the edges over time and generate updated clusters.
 
